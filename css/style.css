@@ -63,7 +63,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 
 .navigation
 {
-	border: 1px solid #FFFFFF;
+	border: 1px solid #0000ff;
 
 	/*flex code - navigation child of wrapper*/
 /*	width: 30%;
@@ -74,9 +74,32 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 	height: 80%;
 	float: left;
 	position:relative;
+
+	padding: 10px;
 }
 
-    .navigation a
+.navigation_child
+{
+	border: 1px solid #0000ff;
+
+	width: 50%;
+	height: 50%;
+
+	/* positioned relative to first ancestor that 
+	isn't static, so navigation div. This helps 
+	to move it around inside the div, having 
+	the outer div as a relation. then bottom and 
+	right are used to move div relative to outer 
+	div. */
+	position: absolute;
+	bottom: 5px;
+	right: 5px; 
+
+	clear: both; /*so no other divs float around it*/
+
+}
+
+    .navigation_child a
     {
         position: relative;
         display: inline-block;
@@ -91,7 +114,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 
 .main
 {
-	border: 1px solid #FF0000;
+	border: 1px solid #0000ff;
 	width:70%;
 	height:80%;
 	float: right;
@@ -112,6 +135,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 	
 }
 
+/*class for eliminating wrap-around effect of floating divs*/
 .clear { clear: both; }
 
 @media all and (min-width: 800px) {
