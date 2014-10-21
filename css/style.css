@@ -1,6 +1,7 @@
 /* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
 body {
-	font: 13px Helmet, Freesans, sans-serif;
+/*	font: 13px Helmet, Freesans, sans-serif;  */
+	font: 13px ;
 	background: url('../img/dkbluedot2.gif');
 
 	margin: 10px;
@@ -9,7 +10,7 @@ body {
 /* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
 
 /* We like off-black for text. */
-body, select, input, textarea {color: #333;}
+body, select, input, textarea {color: #ffffff;}
 
 a {color: #03f;}
 a:hover {color: #69f;}
@@ -28,13 +29,18 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 input:-moz-placeholder { color:#a9a9a9; }
 textarea:-moz-placeholder { color:#a9a9a9; }
 
+/*
+@font-face {
+	font-family: instruction;
+	src: url('../font/instruction/Instruction.ttf');
+}  */
+
 .wrapper
 {
 	margin: 0 auto; 
-	border: 1px solid #0000ff;
 	padding: 5px;
-	height: 90%;
-	width: 90%;
+	height: 80%;
+	width: 80%;
 
 	position:fixed;
 
@@ -44,7 +50,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 	box-sizing: border-box; */
 
 	/* Allows resizing of container by user */
-	resize: both;
+/*	resize: both; */
     overflow: auto;
 
 /*
@@ -55,16 +61,17 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 /*	position: fixed;
 	height: 100%;
 	width: 100%; */
-	left: 5%;
-	top: 5%; 
+	left: 10%;
+	top: 10%; 
+
+	/*h-shadow v-shadow blur spread color*/
+/*	box-shadow: 0px 0px 20px 0px #000000 */
 }
 
 /* NAVIGATION */
 
-.navigation
+.secondary
 {
-	border: 1px solid #0000ff;
-
 	/*flex code - navigation child of wrapper*/
 /*	width: 30%;
 	height: 100%;
@@ -78,10 +85,8 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 	padding: 10px;
 }
 
-.navigation_child
+.nav
 {
-	border: 1px solid #0000ff;
-
 	width: 50%;
 	height: 50%;
 
@@ -97,50 +102,119 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 
 	clear: both; /*so no other divs float around it*/
 
+	padding: 5px;
+
+	text-align: right;
 }
 
-    .navigation_child a
+    .nav a
     {
         position: relative;
+
+/*
+		position: absolute;
+		right: 0;
+		bottom: 0;
+*/
+
         display: inline-block;
         color: #ffffff;
-        width: 1em;
-        height: 1em;
+    /*    width: 1em;
+        height: 1em; */
+
+
         line-height: 0.9em;
         text-decoration: none;
         font-size: 20px;
-        border: 1px solid #0000ff;
+
+        font-family: ;
     }
+
+.nav_links
+{
+	display: inline-block;
+	position: absolute;
+	bottom: 5px;
+	right: 5px; 
+
+}
+
+	.nav_links a 
+	{
+		color: #002f3f;
+		font-family: ;
+	}
 
 .main
 {
-	border: 1px solid #0000ff;
 	width:70%;
 	height:80%;
 	float: right;
 	position: relative;
+	padding: 10px;
 }
 
 .header
 {
-	border: 1px solid #0000ff;
 	height: 10%;
+	padding: 5px;
 
 }
 
 .footer
 {
-	border: 1px solid #0000ff;
 	height: 10%;
+	padding: 5px;
 	
 }
 
 /*class for eliminating wrap-around effect of floating divs*/
 .clear { clear: both; }
 
+.white_bg
+{
+	background-color: #ffffff;
+}
+
+.black_bg
+{
+	background-color: #000000;
+}
+
+.navyblue_bg
+{
+	background-color: #002f3f;
+}
+
+.blue_bg
+{
+	background-color: #0000ff;
+}
+
+.blk_opbg
+{
+	background: url('../img/blkdiv.png');
+	background-repeat: repeat;
+}
+
+.border_1px
+{
+	border: 1px solid #002f3f;
+}
+
+.border_1px_blk
+{
+	border: 1px solid #000000;
+}
+
+#name_link
+{
+	color: #ffffff;
+}
+
 @media all and (min-width: 800px) {
 
-}
+} 
 
 /* Media queries
 -------------------------------------------------------------------------------*/
