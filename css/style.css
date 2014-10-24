@@ -68,6 +68,16 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 /*	box-shadow: 0px 0px 20px 0px #000000 */
 }
 
+.about_wrapper
+{
+	margin: 0 auto;
+	padding: 5px;
+	position: relative;
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+}
+
 /* NAVIGATION */
 
 .secondary
@@ -153,7 +163,8 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 	position: relative;
 	padding: 10px;
 
-	
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 .header
@@ -209,9 +220,59 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 	border: 1px solid #000000;
 }
 
+.border_1px_wt
+{
+	border: 1px solid #ffffff;
+}
+
 #name_link
 {
 	color: #ffffff;
+}
+
+.aboutpic
+{
+	background: url('../img/chris2.png');
+	background-color: #000000;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+
+
+/*	width: 270px;
+	height: 480px;*/
+
+/*	width: 202.5px;
+	height: 360px;*/
+
+	width: 30%;
+	height: 94%;
+	
+/*	margin: 0 auto;*/
+	padding: 10px;
+	margin: 0 auto;
+	position: relative;
+	float: left;
+	top: 4%;
+	left: 4%;
+}
+
+.aboutinfo
+{
+	position: relative;
+	float: right;
+
+	/*margin: 0 auto;*/
+	margin: 1% 1%;
+	padding: 5px;
+
+	width: 60%;
+	/*height: 91%;*/
+}
+
+.aboutinfo p
+{
+	padding: 40px;
 }
 
 @media all and (min-width: 800px) {
