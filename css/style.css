@@ -283,12 +283,12 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 	padding: 40px;
 }
 
-.portfolio_school
+.portfolio_school /*MAIN width: 70%; keep these two divs widths within those confines*/
 {
 	position: relative;
 	float: left;
-	width: 50%;
-	height: 80%; /* 80% of MAIN container in index*/
+	width: 48%;  /* Consider shortening and aligning divs properly*/
+	height: 100%; /* 80% of MAIN container in index*/
 	margin: 0 auto; 
 	padding: 20px;
 
@@ -299,8 +299,8 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 {
 	position: relative;
 	float: right;
-	width: 50%;
-	height: 80%; /* 80% of MAIN container in index*/
+	width: 48%; /* Consider shortening and aligning divs properly */
+	height: 100%; /* 80% of MAIN container in index*/
 	margin: 0 auto; 
 	padding: 20px;
 
