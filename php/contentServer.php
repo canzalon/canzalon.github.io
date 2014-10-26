@@ -19,16 +19,16 @@ $params = $_GET;
 switch ($params["page"])
 {
 	case "name":
-		$file = "http://canzalon.github.io/index.html";
+		$file = "./index.html";
 		break;
 	case "about":
-		$file = "http://canzalon.github.io/about.html";
+		$file = "./about.html";
 		break;
 	case "portfolio":
-		$file = "http://canzalon.github.io/portfolio.html";
+		$file = "./portfolio.html";
 		break;
 	case "resume":
-		$file = "http://canzalon.github.io/resume.html";
+		$file = "./resume.html";
 		break;
 	default: echo "Bad Request.";
 }

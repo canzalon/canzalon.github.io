@@ -35,19 +35,18 @@ function switchContent(link) {
 	{
 		if (asyncRequest.readyState == 4 && asyncRequest.status == 200) 
 		{
-			var data = asyncRequest.responseText.parseJSON();
-			document.getElementById("contentView").innerHTML = asyncRequest.responseText;
+			document.getElementById('contentView').innerHTML = asyncRequest.responseText;
 		}
 	};
 
-	if ((page == "name") || (page == "about") || (page == "portfolio") || (page == "resume"))
+	if ((page == 'name') || (page == 'about') || (page == 'portfolio') || (page == 'resume'))
 	{
-		asyncRequest.open("GET", "http://canzalon.github.io/php/contentServer.php?page=" + page, true);
+		asyncRequest.open('GET', './php/contentServer.php?page=' + page, true);
 		asyncRequest.send(null);
 	}
 	else
 	{
-		document.getElementById("contentView").innerHTML = "Bad page request."
+		document.getElementById('contentView').innerHTML = "Bad page request."
 	}
 
 
