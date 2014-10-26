@@ -53,18 +53,22 @@ function switchContent(link) {
 	if (page == 'name')
 	{
 		asyncRequest.open('GET', './index.html', true);
+		asyncRequest.send(null);
 	}
 	else if (page == 'about')
 	{
 		asyncRequest.open('GET', './about.html', true);
+		asyncRequest.send(null);
 	}
 	else if (page == 'portfolio')
 	{
 		asyncRequest.open('GET', './portfolio.html', true);
+		asyncRequest.send(null);
 	}
 	else if (page == 'resume')
 	{
 		asyncRequest.open('GET', './resume.html', true);
+		asyncRequest.send(null);
 	}
 	else
 	{
