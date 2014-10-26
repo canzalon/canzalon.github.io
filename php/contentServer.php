@@ -33,7 +33,7 @@ switch ($params["page"])
 	default: echo "Bad Request.";
 }
 
-$fh = fopen($file, 'r') or die ("Unable to open file $file");
+$fh = fopen($file, "r") or die ("Unable to open file $file");
 
 $output = fread($fh, filesize($file));
 
