@@ -15,6 +15,37 @@
 	$(document).ready(function (){
 	
 		// your functions go here
+
+		var asyncRequest = new XMLHttpRequest;
+
+		function switchContent(link) {
+			asyncRequest.onreadystatechange = function () {
+				if (asyncRequest.readyState == 4 && asyncRequest.status == 200) {
+					document.getElementById('content').innerHTML = asyncRequest.responseText;
+				}
+			};
+
+			if (link == "name")
+			{
+				asyncRequest.open('GET', "index.html", true);
+			}
+			else if (link == "about")
+			{
+				asyncRequest.open('GET', "about.html", true);
+			}
+			else if (link == "portfolio")
+			{
+				asyncRequest.open('GET', "portfolio.html", true);
+			}
+			else if (link == "resume")
+			{
+				asyncRequest.open('GET', "resume.html", true);
+			}
+			else
+			{
+				asyncRequest.open('GET', "index.html", true);	
+			}
+		}
 	
 	});
 	
