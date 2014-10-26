@@ -16,38 +16,57 @@
 	
 		// your functions go here
 
-		var asyncRequest = new XMLHttpRequest;
+		
+var initialState = new XMLHttpRequest;
 
-		function switchContent(link) {
-			asyncRequest.onreadystatechange = function () {
-				if (asyncRequest.readyState == 4 && asyncRequest.status == 200) {
-					document.getElementById('content').innerHTML = asyncRequest.responseText;
-				}
-			};
+// initialState.onreadystatechange = function() 
+// {
+//     if (initialState.readyState == 4 && initialState.status == 200) 
+//     {
+//     	document.getElementById('contentView').innerHTML = initialState.responseText; 
+// 	}   
+// };
+// initialState.open("GET", "../php/contentServer.php?name=contentView&page=", true);
+// initialState.send();
 
-			if (link == "name")
-			{
-				asyncRequest.open('GET', "index.html", true);
-			}
-			else if (link == "about")
-			{
-				asyncRequest.open('GET', "about.html", true);
-			}
-			else if (link == "portfolio")
-			{
-				asyncRequest.open('GET', "portfolio.html", true);
-			}
-			else if (link == "resume")
-			{
-				asyncRequest.open('GET', "resume.html", true);
-			}
-			else
-			{
-				asyncRequest.open('GET', "index.html", true);	
-			}
+/*initial load of contentView*/
+initialState.onreadystatechange = function() 
+{
+    if (initialState.readyState == 4 && initialState.status == 200) 
+    {
+    	document.getElementById("contentView").innerHTML = "<p>Welcome !!</p>"; 
+	}   
+};
+
+var asyncRequest = new XMLHttpRequest;
+
+
+function switchContent(link) {
+
+	var pageRequest = link;
+
+	if ( (pageRequest == "name") || 
+		 (pageRequest == "about") || 
+		 (pageRequest == "portfolio") || 
+		 (pageRequest == "resume") 
+		)
+	{
+		asyncRequest.open("GET", "../php/contentServer.php?name=contentView&page=" + pageRequest, true);
+		asyncRequest.send();
+	}
+	else 
+	{
+		document.getElementById("contentView").innerHTML = "Bad page request."
+	}
+
+	asyncRequest.onreadystatechange = function () 
+	{
+		if (asyncRequest.readyState == 4 && asyncRequest.status == 200) 
+		{
+			document.getElementById("contentView").innerHTML = asyncRequest.responseText;
 		}
-	
-	});
+	};
+}
 	
 	
 	/* optional triggers
