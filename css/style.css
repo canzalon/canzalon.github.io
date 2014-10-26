@@ -148,19 +148,50 @@ textarea:-moz-placeholder { color:#a9a9a9; }
         font-family: ;
     }
 
+    .nav input
+	{
+		position: relative;
+		display: inline-block;
+		color: #ffffff;
+		background-color: transparent;
+		text-decoration: none;
+		border: none;
+		font-size: 20px;
+		font-family: "Times New Roman", Times, serif;
+		line-height: 0.9em;
+	}
+
 .nav_links
 {
 	display: inline-block;
 	position: absolute;
 	bottom: 5px;
 	right: 5px; 
-
 }
 
 	.nav_links a 
 	{
 		color: #002f3f;
 		font-family: ;
+	}
+
+	.nav_links p
+	{
+		color: #002f3f;
+	}
+
+	.nav_links input
+	{
+		color: #002f3f;
+		position: relative;
+		display: inline-block;
+		background-color: transparent;
+		border: none;
+		font-size: 20px;
+		font-family: "Times New Roman", Times, serif;
+		line-height: 0.9em;
+		text-align: right;
+		text-decoration: none;
 	}
 
 .main
