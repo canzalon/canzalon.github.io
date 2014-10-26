@@ -11,24 +11,24 @@ error_reporting(0);
 
 $params = $_GET;
 
-if ($params["name"] != "contentView")
-{
-	die("document \"".$params["name"]."\" not found.");
-}
+// if ($params["name"] != "contentView")
+// {
+// 	die("document \"".$params["name"]."\" not found.");
+// }
 
 switch ($params["page"])
 {
 	case "name":
-		$file = "../index.html";
+		$file = "http://canzalon.github.io/index.html";
 		break;
 	case "about":
-		$file = "../about.html";
+		$file = "http://canzalon.github.io/about.html";
 		break;
 	case "portfolio":
-		$file = "../portfolio.html";
+		$file = "http://canzalon.github.io/portfolio.html";
 		break;
 	case "resume":
-		$file = "../resume.html";
+		$file = "http://canzalon.github.io/resume.html";
 		break;
 	default: echo "Bad Request.";
 }
