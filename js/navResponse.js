@@ -39,17 +39,37 @@ function switchContent(link) {
 		}
 	};
 
-	if ((page == 'name') || (page == 'about') || (page == 'portfolio') || (page == 'resume'))
+	// if ((page == 'name') || (page == 'about') || (page == 'portfolio') || (page == 'resume'))
+	// {
+	// 	// asyncRequest.open('GET', './php/contentServer.php?page=' + page, true);
+	// 	asyncRequest.open('GET', './' + page, true);
+	// 	asyncRequest.send(null);
+	// }
+	// else
+	// {
+	// 	document.getElementById('contentView').innerHTML = "Bad page request."
+	// }
+
+	if (page == 'name')
 	{
-		asyncRequest.open('GET', './php/contentServer.php?page=' + page, true);
-		asyncRequest.send(null);
+		asyncRequest.open('GET', './index.html', true);
+	}
+	else if (page == 'about')
+	{
+		asyncRequest.open('GET', './about.html', true);
+	}
+	else if (page == 'portfolio')
+	{
+		asyncRequest.open('GET', './portfolio.html', true);
+	}
+	else if (page == 'resume')
+	{
+		asyncRequest.open('GET', './resume.html', true);
 	}
 	else
 	{
 		document.getElementById('contentView').innerHTML = "Bad page request."
 	}
-
-
 
 	// 	if ( (page == "name") || 
 	// 	 (page == "about") || 
