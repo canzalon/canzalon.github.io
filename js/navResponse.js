@@ -17,8 +17,8 @@ asyncRequest.onreadystatechange = function ()
 	}
 };
 
-asyncRequest.open('GET', './default.html', true);
-asyncRequest.send(null);
+initialRequest.open('GET', './default.html', true);
+initialRequest.send(null);
 
 
 /*Navigation response*/
