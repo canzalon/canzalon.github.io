@@ -9,7 +9,7 @@ var resume = "resume";
 var initialRequest = new XMLHttpRequest();
 
 /* Make default code load up with site. */
-asyncRequest.onreadystatechange = function () 
+initialRequest.onreadystatechange = function () 
 {
 	if (initialRequest.readyState == 4 && initialRequest.status == 200) 
 	{
