@@ -22,7 +22,7 @@ function switchContent(link) {
 
 	if (page == 'name')
 	{
-		asyncRequest.open('GET', './index.html', true);
+		asyncRequest.open('GET', './default.html', true);
 		asyncRequest.send(null);
 	}
 	else if (page == 'about')
