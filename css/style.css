@@ -116,7 +116,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 	div. */
 	position: absolute;
 	bottom: 0px;
-	right: 1px; 
+	right: 0px; 
 
 	clear: both; /*so no other divs float around it*/
 
