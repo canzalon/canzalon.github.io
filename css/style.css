@@ -115,8 +115,8 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 	right are used to move div relative to outer 
 	div. */
 	position: absolute;
-	bottom: 5px;
-	right: 5px; 
+	bottom: 0px;
+	right: 1px; 
 
 	clear: both; /*so no other divs float around it*/
 
