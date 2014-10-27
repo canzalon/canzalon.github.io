@@ -227,6 +227,8 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 	width:50%;
 	height:50%;
 
+	top: 25%;
+
 	margin: auto; 
 	padding: 20px;
 
