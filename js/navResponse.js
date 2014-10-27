@@ -6,6 +6,22 @@ var about = "about";
 var portfolio = "portfolio";
 var resume = "resume";
 
+var initialRequest = new XMLHttpRequest();
+
+/* Make default code load up with site. */
+asyncRequest.onreadystatechange = function () 
+{
+	if (initialRequest.readyState == 4 && initialRequest.status == 200) 
+	{
+		document.getElementById('contentView').innerHTML = initialRequest.responseText;
+	}
+};
+
+asyncRequest.open('GET', './default.html', true);
+asyncRequest.send(null);
+
+
+/*Navigation response*/
 var asyncRequest = new XMLHttpRequest();
 
 function switchContent(link) {
