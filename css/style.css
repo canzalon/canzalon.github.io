@@ -242,16 +242,19 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 
 .default_contact
 {
-	position:relative;
+	position:absolute;
 	width:50%;
 	height:50%;
 
 	top: 25%;
+	left: 25%;
 
 	margin: auto; 
 	padding: 20px;
 
 	overflow: none;
+
+	text-align: center;
 }
 
 	.default_contact a
