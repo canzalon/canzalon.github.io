@@ -422,9 +422,9 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 	width: 48%;  /* Consider shortening and aligning divs properly*/
 	height: 100%; /* 80% of MAIN container in index*/
 	margin: 0 auto; 
-	padding: 20px;
+	padding: 0px;
 
-	overflow: auto;
+	overflow: hidden;
 }
 
 .portfolio_personal
@@ -434,10 +434,50 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 	width: 48%; /* Consider shortening and aligning divs properly */
 	height: 100%; /* 80% of MAIN container in index*/
 	margin: 0 auto; 
-	padding: 20px;
+	padding: 0px;
 
-	overflow: auto;
+	overflow: hidden;
 }
+
+	.portfolio_title
+	{
+		font-size: 25px;
+		line-height: 2em;
+/*		color: #002f3f;*/
+		color: #ffffff;
+		text-align: right;
+		letter-spacing: 2px;
+	}
+
+	.portfolio_contents
+	{
+		margin: auto;
+		text-align: left;
+
+		overflow-x: hidden;
+		overflow-y: auto;
+
+		position: relative;
+		width: 95%;
+		height: 88%;
+
+		padding: 5px;
+	}
+
+		.portfolio_contents h1 /*Names of projects*/
+		{
+
+		}
+
+		.portfolio_contents p /*Descriptions of projects*/
+		{
+
+		}
+
+		.portfolio_contents a /*Links to git repos for projects*/
+		{
+
+		}
 
 .no_overflow
 {
