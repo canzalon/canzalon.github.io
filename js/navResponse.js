@@ -7,8 +7,6 @@ var about = "about";
 var portfolio = "portfolio";
 var resume = "resume";
 
-document.getElementById('currentPage').innerHTML = "home";
-
 function switchLabel(currentPage)
 {
 	current = currentPage;
