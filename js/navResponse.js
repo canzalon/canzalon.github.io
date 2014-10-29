@@ -7,16 +7,16 @@ var about = "about";
 var portfolio = "portfolio";
 var resume = "resume";
 
-var labelChange = new XMLHttpRequest();
+// var labelChange = new XMLHttpRequest();
 
 function switchLabel(currentPage)
 {
 	current = currentPage;
 
-	labelChange.onreadystatechange = function () 
-	{
-		if (labelChange.readyState == 4 && labelChange.status == 200) 
-		{
+	// labelChange.onreadystatechange = function () 
+	// {
+	// 	if (labelChange.readyState == 4 && labelChange.status == 200) 
+	// 	{
 			if (current == 'name')
 			{
 				document.getElementById('currentPage').innerHTML = "home";
@@ -37,8 +37,8 @@ function switchLabel(currentPage)
 			{
 				document.getElementById('currentPage').innerHTML = "error";
 			}
-		}
-	};
+	// 	}
+	// };
 }
 
 var initialRequest = new XMLHttpRequest();
