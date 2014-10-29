@@ -13,7 +13,7 @@ initial_page_Request.onreadystatechange = function ()
 {
 	if (initial_page_Request.readyState == 4 && initial_page_Request.status == 200)
 	{
-		document.getElementById('current_page').innerHTML = 'home';
+		document.getElementById('current_page').innerHTML = "<p>home</p>";
 	}
 };
 
