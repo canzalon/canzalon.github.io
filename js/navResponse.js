@@ -1,6 +1,7 @@
 
 // var initialState = new XMLHttpRequest;
 var page;
+var current;
 var name = "name";
 var about = "about";
 var portfolio = "portfolio";
@@ -10,23 +11,25 @@ var labelChange = new XMLHttpRequest();
 
 function switchLabel(currentPage)
 {
+	current = currentPage;
+
 	labelChange.onreadystatechange = function () 
 	{
 		if (labelChange.readyState == 4 && labelChange.status == 200) 
 		{
-			if (currentPage == 'name')
+			if (current == 'name')
 			{
 				document.getElementById('current_page').innerHTML = "home";
 			}
-			else if (currentPage == 'about')
+			else if (current == 'about')
 			{
 				document.getElementById('current_page').innerHTML = "about me";
 			}
-			else if (currentPage == 'portfolio')
+			else if (current == 'portfolio')
 			{
 				document.getElementById('current_page').innerHTML = "portfolio";
 			}
-			else if (currentPage == 'resume')
+			else if (current == 'resume')
 			{
 				document.getElementById('current_page').innerHTML = "resume";
 			}
