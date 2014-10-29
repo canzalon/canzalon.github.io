@@ -60,4 +60,38 @@ function switchContent(link) {
 	{
 		document.getElementById('contentView').innerHTML = "Bad page request."
 	}
+
+	switchLabel(page);
+}
+
+var labelChange = new XMLHttpRequest();
+
+function switchLabel(currentPage)
+{
+	labelChange.onreadystatechange = function () 
+	{
+		if (labelChange.readyState == 4 && labelChange.status == 200) 
+		{
+			if (page == 'name')
+			{
+				document.getElementById('current_page').innerHTML = "home";
+			}
+			else if (page == 'about')
+			{
+				document.getElementById('current_page').innerHTML = "about me";
+			}
+			else if (page == 'portfolio')
+			{
+				document.getElementById('current_page').innerHTML = "portfolio";
+			}
+			else if (page == 'resume')
+			{
+				document.getElementById('current_page').innerHTML = "resume";
+			}
+			else
+			{
+				document.getElementById('current_page').innerHTML = "error";
+			}
+		}
+	};
 }
