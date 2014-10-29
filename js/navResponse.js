@@ -7,6 +7,15 @@ var portfolio = "portfolio";
 var resume = "resume";
 
 var initialRequest = new XMLHttpRequest();
+var initial_page_Request = new XMLHttpRequest();
+
+initial_page_Request.onreadystatechange = function ()
+{
+	if (initial_page_Request.readyState == 4 && initial_page_Request.status == 200)
+	{
+		document.getElementById('current_page').innerHTML = "home";
+	}
+}
 
 /* Make default code load up with site. */
 initialRequest.onreadystatechange = function () 
@@ -23,10 +32,19 @@ initialRequest.send(null);
 
 /*Navigation response*/
 var asyncRequest = new XMLHttpRequest();
+var current_page_Request = new XMLHttpRequest();
 
 function switchContent(link) {
 
 	page = link;
+
+	current_page_Request.onreadystatechange = function () 
+	{
+		if (current_page_Request.readyState == 4 && current_page_Request.status == 200) 
+		{
+			document.getElementById('current_page').innerHTML = page;
+		}
+	};
 
 	asyncRequest.onreadystatechange = function () 
 	{
