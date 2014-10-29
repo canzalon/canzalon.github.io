@@ -92,6 +92,4 @@ function switchContent(link) {
 	{
 		document.getElementById('contentView').innerHTML = "Bad page request."
 	}
-
-	switchLabel(page);
 }
