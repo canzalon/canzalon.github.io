@@ -19,23 +19,23 @@ function switchLabel(currentPage)
 		{
 			if (current == 'name')
 			{
-				document.getElementById('current_page').innerHTML = "home";
+				document.getElementById('currentPage').innerHTML = "home";
 			}
 			else if (current == 'about')
 			{
-				document.getElementById('current_page').innerHTML = "about me";
+				document.getElementById('currentPage').innerHTML = "about me";
 			}
 			else if (current == 'portfolio')
 			{
-				document.getElementById('current_page').innerHTML = "portfolio";
+				document.getElementById('currentPage').innerHTML = "portfolio";
 			}
 			else if (current == 'resume')
 			{
-				document.getElementById('current_page').innerHTML = "resume";
+				document.getElementById('currentPage').innerHTML = "resume";
 			}
 			else
 			{
-				document.getElementById('current_page').innerHTML = "error";
+				document.getElementById('currentPage').innerHTML = "error";
 			}
 		}
 	};
