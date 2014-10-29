@@ -15,7 +15,7 @@ initial_page_Request.onreadystatechange = function ()
 	{
 		document.getElementById('current_page').innerHTML = 'home';
 	}
-}
+};
 
 /* Make default code load up with site. */
 initialRequest.onreadystatechange = function () 
