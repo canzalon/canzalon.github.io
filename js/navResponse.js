@@ -6,6 +6,38 @@ var about = "about";
 var portfolio = "portfolio";
 var resume = "resume";
 
+var labelChange = new XMLHttpRequest();
+
+function switchLabel(currentPage)
+{
+	labelChange.onreadystatechange = function () 
+	{
+		if (labelChange.readyState == 4 && labelChange.status == 200) 
+		{
+			if (currentPage == 'name')
+			{
+				document.getElementById('current_page').innerHTML = "home";
+			}
+			else if (currentPage == 'about')
+			{
+				document.getElementById('current_page').innerHTML = "about me";
+			}
+			else if (currentPage == 'portfolio')
+			{
+				document.getElementById('current_page').innerHTML = "portfolio";
+			}
+			else if (currentPage == 'resume')
+			{
+				document.getElementById('current_page').innerHTML = "resume";
+			}
+			else
+			{
+				document.getElementById('current_page').innerHTML = "error";
+			}
+		}
+	};
+}
+
 var initialRequest = new XMLHttpRequest();
 
 /* Make default code load up with site. */
@@ -62,36 +94,4 @@ function switchContent(link) {
 	}
 
 	switchLabel(page);
-}
-
-var labelChange = new XMLHttpRequest();
-
-function switchLabel(currentPage)
-{
-	labelChange.onreadystatechange = function () 
-	{
-		if (labelChange.readyState == 4 && labelChange.status == 200) 
-		{
-			if (currentPage == 'name')
-			{
-				document.getElementById('current_page').innerHTML = "home";
-			}
-			else if (currentPage == 'about')
-			{
-				document.getElementById('current_page').innerHTML = "about me";
-			}
-			else if (currentPage == 'portfolio')
-			{
-				document.getElementById('current_page').innerHTML = "portfolio";
-			}
-			else if (currentPage == 'resume')
-			{
-				document.getElementById('current_page').innerHTML = "resume";
-			}
-			else
-			{
-				document.getElementById('current_page').innerHTML = "error";
-			}
-		}
-	};
 }
