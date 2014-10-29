@@ -464,19 +464,28 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 		padding: 5px;
 	}
 
-		.portfolio_contents h1 /*Names of projects*/
+		.portfolio_contents_name
 		{
+			font-size: 15px;
+/*			color: #004b63;*/
+			color: #00688a;
 
+			font-weight: normal;
+			line-height: 1.5em;
 		}
 
-		.portfolio_contents p /*Descriptions of projects*/
+		.portfolio_contents_desc
 		{
-
+			text-indent: 20px;
 		}
 
 		.portfolio_contents a /*Links to git repos for projects*/
 		{
-
+			font-size: 10px;
+			font-style: italic;
+			color: #cccccc;
+			text-decoration: none;
+			font-weight: normal;
 		}
 
 .no_overflow
