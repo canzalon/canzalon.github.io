@@ -72,19 +72,19 @@ function switchLabel(currentPage)
 	{
 		if (labelChange.readyState == 4 && labelChange.status == 200) 
 		{
-			if (page == 'name')
+			if (currentPage == 'name')
 			{
 				document.getElementById('current_page').innerHTML = "home";
 			}
-			else if (page == 'about')
+			else if (currentPage == 'about')
 			{
 				document.getElementById('current_page').innerHTML = "about me";
 			}
-			else if (page == 'portfolio')
+			else if (currentPage == 'portfolio')
 			{
 				document.getElementById('current_page').innerHTML = "portfolio";
 			}
-			else if (page == 'resume')
+			else if (currentPage == 'resume')
 			{
 				document.getElementById('current_page').innerHTML = "resume";
 			}
