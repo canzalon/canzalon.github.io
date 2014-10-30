@@ -124,8 +124,9 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 
 			font-family: "Times New Roman", Times, Sans-serif;
 			font-size: 20px;
-			color: #002f3f;
+			color: #00688a;
 			text-align: center;
+			line-height: 1.3em;
 	/*		font-weight: bold;*/
 		}
 
