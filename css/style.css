@@ -424,18 +424,29 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 	position: relative;
 	float: right;
 
+	top: 4%;
+	right: 4%;
+
 	/*margin: 0 auto;*/
-	margin: 1% 1%;
+	margin: 0 auto;
 	padding: 5px;
 
 	width: 60%;
-	/*height: 91%;*/
+	height: 94%;
+
+	overflow: auto;
 }
 
-.aboutinfo p
-{
-	padding: 40px;
-}
+	.aboutinfo p
+	{
+		padding: 10px;
+	}
+
+	.aboutinfo h1
+	{
+		color: #00688a;
+		font-size: 20px;
+	}
 
 .portfolio_school /*MAIN width: 70%; keep these two divs widths within those confines*/
 {
@@ -519,7 +530,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 /* Works in Chrome, Safari, Opera, Android, iOS. */
 /* Does not work in Firefox and IE */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
 }
  
 /* Track */
