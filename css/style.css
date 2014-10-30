@@ -149,6 +149,17 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 			line-height: 1.3em
 		}
 
+			.secondary_resume a
+			{
+				color: #002f3f;
+				text-decoration: none;
+			}
+
+			.secondary_resume a:hover
+			{
+				color: #00688a;
+			}
+
 .nav
 {
 	width: 40%;
@@ -207,6 +218,11 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 		line-height: 0.9em;
 	}
 
+	.nav input:hover
+	{
+		color: #00688a;
+	}
+
 .nav_links
 {
 	display: inline-block;
@@ -238,6 +254,11 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 		line-height: 0.9em;
 		text-align: right;
 		text-decoration: none;
+	}
+
+	.nav_links input:hover
+	{
+		color: #00688a;
 	}
 
 .default_contact
