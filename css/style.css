@@ -135,6 +135,73 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 			width: 100%;
 			height: 80%;
 			padding: 5px;
+
+			overflow-x: hidden;
+			overflow-y: auto;
+		}
+
+		.secondary_personal p
+		{
+			color: #cccccc;
+			font-size: 11px;
+			text-indent: 0px;
+			text-align: center;
+			line-height: 1.5em;
+		}
+
+		.secondary_personal h1
+		{
+			color: #00688a;
+			border: 1px solid #002f3f;
+			text-align: center;
+			line-height: 1.5em;
+		}
+
+		.secondary_personal h2
+		{
+			color: #00688a;
+			font-size: 11px;
+		}
+
+		.secondary_personal h3
+		{
+			color: #00688a;
+			border: 1px solid #002f3f;
+			font-size: 12px;
+		}
+
+		.secondary_personal h4
+		{
+			color: #00688a;
+			border: 1px solid #002f3f;
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.5em;
+		}
+
+		.secondary_personal a
+		{
+			color: #cccccc;
+			font-style: italic;
+			font-size: 10px;
+		}
+
+			.secondary_personal_about a:hover
+			{
+				color: #ffffff;
+				font-style: italic;
+			}
+
+		.secondary_personal_arrow
+		{
+			background: url('../img/arrow_sm.png');
+			/*background-color: #000000;*/
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+
+			width: 100%;
+			height: 100%;
 		}
 
 		.secondary_resume
