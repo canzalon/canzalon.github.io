@@ -61,7 +61,7 @@ initialRequest.onreadystatechange = function ()
 	}
 };
 
-initialRequest.open('GET', './default.html', true);
+initialRequest.open('GET', '../html/default.html', true);
 initialRequest.send(null);
 
 
@@ -82,22 +82,22 @@ function switchContent(link) {
 
 	if (page == 'name')
 	{
-		asyncRequest.open('GET', './default.html', true);
+		asyncRequest.open('GET', '../html/default.html', true);
 		asyncRequest.send(null);
 	}
 	else if (page == 'about')
 	{
-		asyncRequest.open('GET', './about.html', true);
+		asyncRequest.open('GET', '../html/about.html', true);
 		asyncRequest.send(null);
 	}
 	else if (page == 'portfolio')
 	{
-		asyncRequest.open('GET', './portfolio.html', true);
+		asyncRequest.open('GET', '../html/portfolio.html', true);
 		asyncRequest.send(null);
 	}
 	else if (page == 'resume')
 	{
-		asyncRequest.open('GET', './resume.html', true);
+		asyncRequest.open('GET', '../html/resume.html', true);
 		asyncRequest.send(null);
 	}
 	else
