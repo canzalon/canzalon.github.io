@@ -7,6 +7,12 @@ var about = "about";
 var portfolio = "portfolio";
 var resume = "resume";
 
+/*
+************************************
+* CURRENT PAGE RESPONSE
+************************************
+*/
+
 function switchLabel(currentPage)
 {
 	current = currentPage;
@@ -32,6 +38,12 @@ function switchLabel(currentPage)
 		document.getElementById('currentPage').innerHTML = "error";
 	}
 }
+
+/*
+************************************
+* MAIN CONTAINER RESPONSE
+************************************
+*/
 
 var initialRequest = new XMLHttpRequest();
 
@@ -91,9 +103,9 @@ function switchContent(link) {
 
 
 /*
-*
+************************************
 * SECONDARY CONTAINER RESPONSE
-*
+************************************
 */
 
 /*Initial loadup of secondary container*/
