@@ -1,3 +1,8 @@
+/* 
+* canzalon.github.io
+* Language: Javascript
+* File: navResponse.js
+*/
 
 // var initialState = new XMLHttpRequest;
 var page;
