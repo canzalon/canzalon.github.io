@@ -335,11 +335,11 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 .default_contact
 {
 	position:absolute;
-	width:50%;
+	width:40%;
 	height:50%;
 
 	top: 25%;
-	left: 25%;
+	left: 30%;
 
 	margin: auto; 
 	padding: 20px;
