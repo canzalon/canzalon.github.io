@@ -7,6 +7,12 @@ var about = "about";
 var portfolio = "portfolio";
 var resume = "resume";
 
+/*
+************************************
+* CURRENT PAGE RESPONSE
+************************************
+*/
+
 function switchLabel(currentPage)
 {
 	current = currentPage;
@@ -32,6 +38,12 @@ function switchLabel(currentPage)
 		document.getElementById('currentPage').innerHTML = "error";
 	}
 }
+
+/*
+************************************
+* MAIN CONTAINER RESPONSE
+************************************
+*/
 
 var initialRequest = new XMLHttpRequest();
 
@@ -86,5 +98,67 @@ function switchContent(link) {
 	else
 	{
 		document.getElementById('contentView').innerHTML = "Bad page request."
+	}
+}
+
+
+/*
+************************************
+* SECONDARY CONTAINER RESPONSE
+************************************
+*/
+
+/*Initial loadup of secondary container*/
+var initialRequestSec = new XMLHttpRequest();
+
+initialRequestSec.onreadystatechange = function () 
+{
+	if (initialRequestSec.readyState == 4 && initialRequestSec.status == 200) 
+	{
+		document.getElementById('contentViewSec').innerHTML = initialRequestSec.responseText;
+	}
+};
+
+initialRequestSec.open('GET', '../html/defaultS.html', true);
+initialRequestSec.send(null);
+
+/*Secondary container response*/
+var asyncRequestSec = new XMLHttpRequest();
+
+function switchContentSec(slink)
+{
+	spage = slink;
+
+	asyncRequestSec.onreadystatechange = function () 
+	{
+		if (asyncRequestSec.readyState == 4 && asyncRequestSec.status == 200) 
+		{
+			document.getElementById('contentViewSec').innerHTML = asyncRequestSec.responseText;
+		}
+	};
+
+	if (spage == 'name')
+	{
+		asyncRequestSec.open('GET', '../html/defaultS.html', true);
+		asyncRequestSec.send(null);
+	}
+	else if (spage == 'about')
+	{
+		asyncRequestSec.open('GET', '../html/aboutS.html', true);
+		asyncRequestSec.send(null);
+	}
+	else if (spage == 'portfolio')
+	{
+		asyncRequestSec.open('GET', '../html/portfolioS.html', true);
+		asyncRequestSec.send(null);
+	}
+	else if (spage == 'resume')
+	{
+		asyncRequestSec.open('GET', '../html/resumeS.html', true);
+		asyncRequestSec.send(null);
+	}
+	else
+	{
+		document.getElementById('contentViewSec').innerHTML = "Bad page request."
 	}
 }
