@@ -181,9 +181,12 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 
 		.secondary_personal a
 		{
+			display: inline-block;
 			color: #cccccc;
 			font-style: italic;
 			font-size: 10px;
+			/*line-height: 2em;*/
+			margin: 10px auto;
 		}
 
 			.secondary_personal_about a:hover
