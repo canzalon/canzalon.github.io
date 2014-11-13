@@ -585,7 +585,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 
 		.portfolio_contents_desc
 		{
-			text-indent: 20px;
+			text-indent: 0px;
 		}
 
 		.portfolio_contents a /*Links to git repos for projects*/
